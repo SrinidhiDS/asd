@@ -1,0 +1,9 @@
+<h1> "Welcome to the {{title}}" </h1>
+<h2 style ='text-align: center;'> Variety of {{name}} are available here </h2>
+<app-product [parentmessage]="ques" class="cnt" (productmessage)="recievemsg($event)"></app-product>
+<p class="cnt">{{childmsg}}</p>
+<!--<div class = "cnt"><img [src] = 'image'  alt="" class= "center"></div>-->
+<div class="cnt"><input [(ngModel)] = "value" type = 'text' > </div> <p class = 'cnt'> User input : {{value}} </p>
+
+<app-login></app-login>
+
